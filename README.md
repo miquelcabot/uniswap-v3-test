@@ -20,3 +20,8 @@ Run prettier on all your contracts:
 ```
 npm run prettier
 ```
+
+## References
+
+* [https://github.com/Uniswap/uniswap-v2-periphery](https://github.com/Uniswap/uniswap-v2-periphery)
+* [https://github.com/OpenZeppelin/openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
