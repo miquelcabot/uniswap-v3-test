@@ -17,8 +17,10 @@ describe('Swap contract', () => {
   beforeEach('deploy', async () => {
     [owner, addr1, addr2] = await ethers.getSigners();
 
+    const initialSupply: bigint = BigInt(100_000_000_000_000_000_000)
+
     const SampleToken = await ethers.getContractFactory('SampleToken')
-    sampleToken = (await SampleToken.deploy(1_000_000)) as SampleToken
+    sampleToken = (await SampleToken.deploy(initialSupply)) as SampleToken
 
     const Swap = await ethers.getContractFactory('Swap')
     swap = (await Swap.deploy(UniswapV2Router02Address)) as Swap
@@ -43,8 +45,7 @@ describe('Swap contract', () => {
   })
 
   it('Test swap', async () => {
-    await sampleToken
-    await swap.swapTokensForETH(sampleToken.address, 100, 10, 1000)
+    await swap.swapTokensForETH(sampleToken.address, 100 /*, 10, 1000*/)
   })
 
 })
