@@ -5,6 +5,15 @@ pragma solidity ^0.7.3;
 import "hardhat/console.sol";
 
 interface IUniSwap {
+  function addLiquidityETH(
+    address token,
+    uint amountTokenDesired,
+    uint amountTokenMin,
+    uint amountETHMin,
+    address to,
+    uint deadline
+  ) external payable returns (uint amountToken, uint amountETH, uint liquidity);
+
   function swapExactTokensForETH(
     uint256 amountIn,
     uint256 amountOutMin,
@@ -37,7 +46,7 @@ contract Swap {
     uniswap = IUniSwap(_uniswap);
   }
 
-  function swapTokensForETH(
+  function swapETHForExactTokens(
     address token,
     uint256 amountIn //,
     // uint256 amountOutMin,
@@ -51,6 +60,8 @@ contract Swap {
     console.log("Uniswap address: %s", address(uniswap));
 
     IERC20(token).approve(address(uniswap), amountIn);
+
+    uniswap.addLiquidityETH(token, amountIn, amountIn, 100000000000000000, msg.sender, 100);
 
     // IERC20(token).transferFrom(msg.sender, address(this), amountIn);
     // IERC20(token).transfer(address(this), amountIn);

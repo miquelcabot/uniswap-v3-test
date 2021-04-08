@@ -45,7 +45,7 @@ describe('Swap contract', () => {
   })
 
   it('Test swap', async () => {
-    await swap.swapTokensForETH(sampleToken.address, 100 /*, 10, 1000*/)
+    await swap.swapETHForExactTokens(sampleToken.address, 100000 /*, 10, 1000*/)
   })
 
 })
