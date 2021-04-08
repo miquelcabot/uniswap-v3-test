@@ -11,9 +11,14 @@ Compile:
 npm run compile
 ```
 
-Test:
+Test in local Hardhat blockchain:
 ```
 npm run test
+```
+
+Test in Rinkeby test network:
+```
+npm run test_rinkeby
 ```
 
 Run prettier on all your contracts:
