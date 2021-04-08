@@ -6,6 +6,7 @@
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",
+    "test_rinkeby": "hardhat test --network rinkeby",
     "deploy": "hardhat run scripts/deploy.ts --network rinkeby",
     "prettier": "prettier --write 'contracts/**/*.sol' --tab-width 2"
   },
