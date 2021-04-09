@@ -5,8 +5,6 @@ import { SampleToken } from '../typechain/SampleToken'
 import { expect } from 'chai'
 import { ethers } from 'hardhat'
 
-const UniswapV2Router02Address: string = '0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D'
-
 describe('Swap contract', () => {
   let swap: Swap
   let sampleToken: SampleToken
@@ -23,7 +21,7 @@ describe('Swap contract', () => {
     sampleToken = (await SampleToken.deploy(initialSupply)) as SampleToken
 
     const Swap = await ethers.getContractFactory('Swap')
-    swap = (await Swap.deploy(UniswapV2Router02Address)) as Swap
+    swap = (await Swap.deploy()) as Swap
   })
 
   it('Sample token contract is deployed', async () => {

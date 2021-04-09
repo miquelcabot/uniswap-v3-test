@@ -458,6 +458,11 @@
     "@types/sinon-chai" "^3.2.3"
     "@types/web3" "1.0.19"
 
+"@openzeppelin/contracts@3.4.1-solc-0.7-2":
+  version "3.4.1-solc-0.7-2"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-3.4.1-solc-0.7-2.tgz#371c67ebffe50f551c3146a9eec5fe6ffe862e92"
+  integrity sha512-tAG9LWg8+M2CMu7hIsqHPaTyG4uDzjr6mhvH96LvOpLZZj6tgzTluBt+LsCf1/QaYrlis6pITvpIaIhE+iZB+Q==
+
 "@openzeppelin/contracts@^3.4.1":
   version "3.4.1"
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-3.4.1.tgz#03c891fec7f93be0ae44ed74e57a122a38732ce7"
@@ -714,6 +719,31 @@
   dependencies:
     "@types/bn.js" "*"
     "@types/underscore" "*"
+
+"@uniswap/lib@^4.0.1-alpha":
+  version "4.0.1-alpha"
+  resolved "https://registry.yarnpkg.com/@uniswap/lib/-/lib-4.0.1-alpha.tgz#2881008e55f075344675b3bca93f020b028fbd02"
+  integrity sha512-f6UIliwBbRsgVLxIaBANF6w09tYqc6Y/qXdsrbEmXHyFA7ILiKrIwRFXe1yOg8M3cksgVsO9N7yuL2DdCGQKBA==
+
+"@uniswap/v2-core@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@uniswap/v2-core/-/v2-core-1.0.1.tgz#af8f508bf183204779938969e2e54043e147d425"
+  integrity sha512-MtybtkUPSyysqLY2U210NBDeCHX+ltHt3oADGdjqoThZaFRDKwM6k1Nb3F0A3hk5hwuQvytFWhrWHOEq6nVJ8Q==
+
+"@uniswap/v3-core@1.0.0-rc.1", "@uniswap/v3-core@^1.0.0-rc.1":
+  version "1.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/@uniswap/v3-core/-/v3-core-1.0.0-rc.1.tgz#f2bbc483451364a951fba06eb2d978c6e8bdd58f"
+  integrity sha512-4ET2H0a8p7nVBGFWfio9SHc+RA6UIXEvlTRIJNsDwjQvfs8Jq9lfJ+eSOUTGmiB8Vp8V5dWarLDBU/rDE159pQ==
+
+"@uniswap/v3-periphery@^1.0.0-beta.17":
+  version "1.0.0-beta.17"
+  resolved "https://registry.yarnpkg.com/@uniswap/v3-periphery/-/v3-periphery-1.0.0-beta.17.tgz#da150f1c08259be3c0452d0bcd46f4f19fa26d49"
+  integrity sha512-yhxdRGI2ZO/hdqYUMGCkeaPXADNHE88p5nDtufmhIH80n7Xyb2WyMUQ1e5obkJZ9EM848rZ8PFzHsdvBP5kC0A==
+  dependencies:
+    "@openzeppelin/contracts" "3.4.1-solc-0.7-2"
+    "@uniswap/lib" "^4.0.1-alpha"
+    "@uniswap/v2-core" "1.0.1"
+    "@uniswap/v3-core" "1.0.0-rc.1"
 
 "@yarnpkg/lockfile@^1.1.0":
   version "1.1.0"
