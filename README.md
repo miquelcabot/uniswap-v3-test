@@ -1,33 +1,33 @@
-# uniswap-v2-test
-Test app that connects to Uniswap v2 using Hard Hat + Waffle + Ethers
+# uniswap-v3-test
+Test app that connects to Uniswap v3 using Hard Hat + Waffle + Ethers
 
 Install:
 ```
-npm install
+yarn install
 ```
 
 Compile:
 ```
-npm run compile
+yarn run compile
 ```
 
 Test in local Hardhat blockchain:
 ```
-npm run test
+yarn run test
 ```
 
 Test in Rinkeby test network:
 ```
-npm run test_rinkeby
+yarn run test_rinkeby
 ```
 
 Run prettier on all your contracts:
 ```
-npm run prettier
+yarn run prettier
 ```
 
 ## References
 
 * [https://vomtom.at/how-to-use-uniswap-v2-as-a-developer/](https://vomtom.at/how-to-use-uniswap-v2-as-a-developer/)
-* [https://github.com/Uniswap/uniswap-v2-periphery](https://github.com/Uniswap/uniswap-v2-periphery)
+* [https://github.com/Uniswap/uniswap-v3-periphery](https://github.com/Uniswap/uniswap-v3-periphery)
 * [https://github.com/OpenZeppelin/openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts)
