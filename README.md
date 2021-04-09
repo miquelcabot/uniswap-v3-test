@@ -1,5 +1,5 @@
-# uniswap-test
-Test app that connects to Uniswap using Hard Hat + Waffle + Ethers
+# uniswap-v2-test
+Test app that connects to Uniswap v2 using Hard Hat + Waffle + Ethers
 
 Install:
 ```
